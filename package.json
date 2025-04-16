@@ -9,7 +9,8 @@
   "exports": {
     ".": {
       "import": "./dist/three-interact.es.js",
-      "require": "./dist/three-interact.umd.js"
+      "require": "./dist/three-interact.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "repository": {
