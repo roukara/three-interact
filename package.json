@@ -12,6 +12,14 @@
       "require": "./dist/three-interact.umd.js"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roukara/three-interact.git"
+  },
+  "homepage": "https://github.com/roukara/three-interact",
+  "bugs": {
+    "url": "https://github.com/roukara/three-interact/issues"
+  },
   "files": [
     "dist"
   ],
