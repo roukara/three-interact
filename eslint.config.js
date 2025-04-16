@@ -25,8 +25,8 @@ export default [
     'plugin:@typescript-eslint/recommended'
   ),
   {
-    // Explicitly include examples directory files
-    files: ['**/*.ts', '**/*.js', 'examples/**/*.js', 'examples/**/*.ts', 'examples/**/*.html'],
+    // TypeScript/JavaScript files
+    files: ['**/*.ts', '**/*.js', 'examples/**/*.js', 'examples/**/*.ts'],
     languageOptions: {
       parser: tsParser,
       ecmaVersion: 2020,
@@ -50,6 +50,14 @@ export default [
       '@typescript-eslint/explicit-function-return-type': 'off', // No need to specify function return type
       '@typescript-eslint/no-explicit-any': 'warn', // Warn for any type usage
       '@typescript-eslint/no-unused-vars': ['warn', { 'argsIgnorePattern': '^_' }] // Warn for unused vars, ignore args starting with _
+    }
+  },
+  {
+    // HTML files
+    files: ['examples/**/*.html'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      sourceType: 'module'
     }
   }
 ]
