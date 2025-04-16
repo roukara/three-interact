@@ -1,13 +1,13 @@
-import tseslint from '@typescript-eslint/eslint-plugin';
-import tsParser from '@typescript-eslint/parser';
-import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js';
+import tseslint from '@typescript-eslint/eslint-plugin'
+import tsParser from '@typescript-eslint/parser'
+import { FlatCompat } from '@eslint/eslintrc'
+import js from '@eslint/js'
 
 // Create a FlatCompat instance with required parameters
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
   recommendedConfig: js.configs.recommended
-});
+})
 
 export default [
   {
@@ -46,11 +46,10 @@ export default [
       'no-unused-vars': 'warn', // Warn for unused variables
       'no-console': 'warn', // Warn for console.log
       'object-curly-spacing': ['error', 'always'], // Spaces inside object braces
-      
       // TypeScript specific rules
       '@typescript-eslint/explicit-function-return-type': 'off', // No need to specify function return type
       '@typescript-eslint/no-explicit-any': 'warn', // Warn for any type usage
       '@typescript-eslint/no-unused-vars': ['warn', { 'argsIgnorePattern': '^_' }] // Warn for unused vars, ignore args starting with _
     }
   }
-]; 
+]
