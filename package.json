@@ -1,6 +1,6 @@
 {
   "name": "three-interact",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Easy Three.js interactions with declarative method chaining",
   "type": "module",
   "main": "./dist/three-interact.umd.js",
